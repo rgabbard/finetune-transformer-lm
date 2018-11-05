@@ -1,6 +1,13 @@
 # finetune-transformer-lm
 Code and model for the paper "Improving Language Understanding by Generative Pre-Training"
 
+Before running this code, you need to:
+```
+# if you lack a GPU, see requirements.txt for necessary modifications
+pip install -r requirements.txt
+python -m spacy download en
+```
+
 Currently this code implements the ROCStories Cloze Test result reported in the paper by running:
 `python train.py --dataset rocstories --desc rocstories --submit --analysis --data_dir [path to data here]`
 
